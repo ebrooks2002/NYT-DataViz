@@ -1,0 +1,251 @@
+Year,Keyword,Growth
+2001,Terrorism,9092.0
+2001,AIRLINES AND AIRPLANES,7811.0
+2001,World Trade Center (NYC),7315.0
+2001,Hijacking,7219.0
+2001,New York City,7106.0
+2001,Washington (DC),6053.0
+2001,UNITED STATES ARMAMENT AND DEFENSE,4315.0
+2001,Pentagon Building,3767.0
+2001,Missing Persons,2543.0
+2001,United States International Relations,2464.0
+2002,Ethics,1535.0
+2002,ACCOUNTING AND ACCOUNTANTS,1474.0
+2002,Iraq,1310.0
+2002,ATOMIC WEAPONS,868.0
+2002,Enron Corp,843.0
+2002,Bankruptcies,831.0
+2002,Sex Crimes,787.0
+2002,"Bloomberg, Michael R",760.0
+2002,Priests,681.0
+2002,Palestinians,674.0
+2003,Iraq,5807.0
+2003,UNITED STATES ARMAMENT AND DEFENSE,4497.0
+2003,United States International Relations,3934.0
+2003,ATOMIC WEAPONS,2833.0
+2003,Biological and Chemical Warfare,2559.0
+2003,"Hussein, Saddam",948.0
+2003,Presidential Election of 2004,932.0
+2003,"Bush, George W",704.0
+2003,ADVERTISING AND MARKETING,691.0
+2003,Baghdad (Iraq),571.0
+2004,Presidential Election of 2004,3889.0
+2004,"Kerry, John",2102.0
+2004,ELECTION ISSUES,1784.0
+2004,"Bush, George W",1350.0
+2004,Presidential Elections (US),1349.0
+2004,"Conventions, National (US)",787.0
+2004,Politics and Government,776.0
+2004,"Kerry, John F",718.0
+2004,Elections,647.0
+2004,ADVERTISING AND MARKETING,575.0
+2005,HURRICANE KATRINA,863.0
+2005,Hurricanes and Tropical Storms,555.0
+2005,New Orleans (La),521.0
+2005,Classical Music,458.0
+2005,Travel and Vacations,448.0
+2005,Brooklyn (NYC),421.0
+2005,Manhattan (NYC),419.0
+2005,KATRINA (STORM),397.0
+2005,Real Estate,358.0
+2005,Mayors,348.0
+2006,New York City,3938.0
+2006,United States Politics and Government,2764.0
+2006,Books and Literature,2205.0
+2006,Computers and the Internet,1845.0
+2006,New York State,1650.0
+2006,Iraq,1527.0
+2006,Terrorism,1500.0
+2006,Baseball,1440.0
+2006,Politics and Government,1405.0
+2006,United States,1397.0
+2007,Presidential Election of 2008,1332.0
+2007,Mortgages,337.0
+2007,"Obama, Barack",305.0
+2007,Athletics and Sports,304.0
+2007,"Giuliani, Rudolph W",243.0
+2007,United States Attorneys,169.0
+2007,"Edwards, John",168.0
+2007,Families and Family Life,151.0
+2007,"Romney, Mitt",149.0
+2007,ALBANY (NY),149.0
+2008,Presidential Election of 2008,2564.0
+2008,"Obama, Barack",2354.0
+2008,United States Economy,1514.0
+2008,"McCain, John",1212.0
+2008,Subprime Mortgage Crisis,1135.0
+2008,Olympic Games (2008),875.0
+2008,"Clinton, Hillary Rodham",609.0
+2008,"Prices (Fares, Fees and Rates)",603.0
+2008,Economic Conditions and Trends,527.0
+2008,Weddings and Engagements,439.0
+2009,Housing and Real Estate,1483.0
+2009,Movies,1441.0
+2009,United States Defense and Military Forces,1086.0
+2009,Reform and Reorganization,901.0
+2009,Health Insurance and Managed Care,805.0
+2009,Afghanistan War (2001- ),739.0
+2009,Shopping and Retail,643.0
+2009,Fashion and Apparel,591.0
+2009,"Obama, Barack",422.0
+2009,Subprime Mortgage Crisis,405.0
+2010,BP Plc,788.0
+2010,Goldman Sachs Group,780.0
+2010,Elections,746.0
+2010,Oil (Petroleum) and Gasoline,722.0
+2010,Offshore Drilling and Exploration,716.0
+2010,Gulf of Mexico,714.0
+2010,Senate,649.0
+2010,United States Politics and Government,638.0
+2010,Accidents and Safety,632.0
+2010,House of Representatives,626.0
+2011,Middle East and North Africa Unrest (2010- ),2061.0
+2011,Presidential Election of 2012,2014.0
+2011,"Demonstrations, Protests, and Riots",1510.0
+2011,Politics and Government,1375.0
+2011,Libya,1237.0
+2011,Football,1149.0
+2011,Banking and Financial Institutions,1014.0
+2011,Republican Party,965.0
+2011,New York City,958.0
+2011,European Sovereign Debt Crisis (2010- ),852.0
+2012,Presidential Election of 2012,3274.0
+2012,"Romney, Mitt",2817.0
+2012,Real Estate and Housing (Residential),1169.0
+2012,"Obama, Barack",1098.0
+2012,Editorials,1077.0
+2012,Olympic Games (2012),1034.0
+2012,Hurricane Sandy (2012),928.0
+2012,Children and Childhood,656.0
+2012,"Santorum, Rick",645.0
+2012,New York City,639.0
+2013,"Elections, Mayors",791.0
+2013,Suits and Litigation (Civil),538.0
+2013,Surveillance of Citizens by Government,453.0
+2013,"de Blasio, Bill",401.0
+2013,Patient Protection and Affordable Care Act (2010),399.0
+2013,National Security Agency,389.0
+2013,Gun Control,350.0
+2013,Social Media,319.0
+2013,Movies,299.0
+2013,Federal Budget (US),291.0
+2014,United States,1534.0
+2014,Ukraine,1200.0
+2014,Midterm Elections (2014),1101.0
+2014,Islamic State in Iraq and Syria (ISIS),885.0
+2014,Russia,721.0
+2014,"Demonstrations, Protests and Riots",684.0
+2014,Ebola Virus,682.0
+2014,Iraq,557.0
+2014,"Police Brutality, Misconduct and Shootings",545.0
+2014,World Cup 2014 (Soccer),542.0
+2015,Presidential Election of 2016,3702.0
+2015,"Murders, Attempted Murders and Homicides",1250.0
+2015,"Clinton, Hillary Rodham",1121.0
+2015,"Trump, Donald J",1039.0
+2015,"Bush, Jeb",807.0
+2015,Terrorism,738.0
+2015,Republican Party,662.0
+2015,Television,640.0
+2015,Iran,528.0
+2015,Greece,528.0
+2016,"Trump, Donald J",4687.0
+2016,Presidential Election of 2016,3449.0
+2016,"Clinton, Hillary Rodham",1597.0
+2016,"Sanders, Bernard",670.0
+2016,Primaries and Caucuses,653.0
+2016,Olympic Games (2016),596.0
+2016,Great Britain Withdrawal from EU (Brexit),481.0
+2016,Pop and Rock Music,457.0
+2016,"Cruz, Ted",425.0
+2016,Republican National Convention,333.0
+2017,United States Politics and Government,4834.0
+2017,"Trump, Donald J",2038.0
+2017,Politics and Government,1678.0
+2017,Russian Interference in 2016 US Elections and Ties to Trump Associates,631.0
+2017,Senate,625.0
+2017,Health Insurance and Managed Care,553.0
+2017,Patient Protection and Affordable Care Act (2010),535.0
+2017,Sexual Harassment,496.0
+2017,United States International Relations,438.0
+2017,House of Representatives,426.0
+2018,Midterm Elections (2018),1594.0
+2018,Politics and Government,828.0
+2018,#MeToo Movement,806.0
+2018,Democratic Party,757.0
+2018,International Trade and World Market,654.0
+2018,"Kavanaugh, Brett M",594.0
+2018,"Elections, House of Representatives",591.0
+2018,Russian Interference in 2016 US Elections and Ties to Trump Associates,573.0
+2018,Customs (Tariff),452.0
+2018,Supreme Court (US),438.0
+2019,Presidential Election of 2020,2365.0
+2019,Trump-Ukraine Whistle-blower Complaint and Impeachment Inquiry,1103.0
+2019,Democratic Party,933.0
+2019,"Biden, Joseph R Jr",804.0
+2019,Impeachment,696.0
+2019,"Warren, Elizabeth",571.0
+2019,your-feed-science,546.0
+2019,Debates (Political),446.0
+2019,"Sanders, Bernard",426.0
+2019,Ukraine,389.0
+2020,Coronavirus (2019-nCoV),14270.0
+2020,Presidential Election of 2020,3971.0
+2020,Quarantines,2426.0
+2020,Quarantine (Life and Culture),2322.0
+2020,"Biden, Joseph R Jr",1937.0
+2020,United States,1620.0
+2020,Coronavirus Reopenings,1614.0
+2020,George Floyd Protests (2020),1297.0
+2020,Primaries and Caucuses,1108.0
+2020,Epidemics,1052.0
+2021,Vaccination and Immunization,2577.0
+2021,Disease Rates,2280.0
+2021,Content Type: Personal Profile,2197.0
+2021,United States,1806.0
+2021,States (US),1775.0
+2021,Deaths (Fatalities),1773.0
+2021,"Storming of the US Capitol (Jan, 2021)",1069.0
+2021,Content Type: Service,913.0
+2021,audio-neutral-informative,773.0
+2021,"Biden, Joseph R Jr",733.0
+2022,Russian Invasion of Ukraine (2022),3721.0
+2022,Midterm Elections (2022),3499.0
+2022,Ukraine,2796.0
+2022,Russia,2624.0
+2022,"Elections, House of Representatives",1515.0
+2022,Elections,1433.0
+2022,Primaries and Caucuses,1174.0
+2022,"Putin, Vladimir V",1126.0
+2022,internal-sub-only-nl,914.0
+2022,internal-paywall-exempt,883.0
+2023,internal-open-access,1883.0
+2023,States (US),1714.0
+2023,Deaths (Fatalities),1595.0
+2023,Disease Rates,1592.0
+2023,United States,830.0
+2023,Presidential Election of 2024,366.0
+2023,Israel-Gaza War (2023- ),336.0
+2023,Artificial Intelligence,202.0
+2023,Gaza Strip,193.0
+2023,Hamas,165.0
+2024,Presidential Transition (US),125.0
+2024,"Assad, Bashar al-",116.0
+2024,Two Thousand Twenty Four,97.0
+2024,Syria,85.0
+2024,Hayat Tahrir al-Sham,71.0
+2024,"Thompson, Brian (1974-2024)",71.0
+2024,UnitedHealth Group Inc,59.0
+2024,"Mangione, Luigi",47.0
+2024,Martial Law,47.0
+2024,Damascus (Syria),41.0
+2025,Executive Orders and Memorandums,7.0
+2025,Druse (Sect),4.0
+2025,Pro-Palestinian Campus Protests (2023- ),4.0
+2025,internal-paywall-exempt,4.0
+2025,"Schimel, Brad",4.0
+2025,"Elections, Courts and the Judiciary",4.0
+2025,"Crawford, Susan (1965- )",3.0
+2025,"Waltz, Michael (1974- )",3.0
+2025,Tren de Aragua (Gang),3.0
+2025,Company Reports,3.0
