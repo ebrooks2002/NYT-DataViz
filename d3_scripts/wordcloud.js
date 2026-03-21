@@ -16,7 +16,7 @@
  d3.csv("data/wordcloud_data.csv").then(data => {
      // Convert numerical columns from strings to numbers
      data.forEach(d => {
-         d['Growth Percentage'] = +d['Growth Percentage'];
+         d['Growth'] = +d['Growth'];
          d.Year = +d.Year;
      });
 
@@ -32,14 +32,14 @@
          const filteredData = data.filter(d => d.Year == selectedYear);
 
          // Define font size scale
-         const growthExtent = d3.extent(filteredData, d => d['Growth Percentage']);
+         const growthExtent = d3.extent(filteredData, d => d['Growth']);
          const fontSizeScale = d3.scaleLinear()
              .domain(growthExtent)
              .range([20, 50]); // Adjust font size range as needed
 
          const layout = d3.layout.cloud()
              .size([wcWidth, wcHeight])
-             .words(filteredData.map(d => ({ text: d.Keyword, size: d['Growth Percentage'] })))
+             .words(filteredData.map(d => ({ text: d.Keyword, size: d['Growth'] })))
              .padding(5)
              .rotate(() => 0) // Set rotation to 0 for all words
              .fontSize(d => fontSizeScale(d.size))
