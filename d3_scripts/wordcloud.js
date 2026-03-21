@@ -13,7 +13,7 @@
      .attr("transform", `translate(${wcWidth / 2}, ${wcHeight / 2})`);
 
  // Load the CSV data
- d3.csv("data/wordcloud_data.csv").then(data => {
+ d3.csv("data/nyt_keyword_growth_final.csv").then(data => {
      // Convert numerical columns from strings to numbers
      data.forEach(d => {
          d['Growth'] = +d['Growth'];
