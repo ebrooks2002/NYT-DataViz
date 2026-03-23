@@ -16,10 +16,10 @@ const treemapGroup = svg.append("g");
 const tooltip = d3.select("#tooltip");
 
 // Load the CSV data
-d3.csv("data/treemap2000-11.csv").then(data => {
+d3.csv("data/treemap2000-25.csv").then(data => {
     // Convert numerical columns from strings to numbers
     data.forEach(d => {
-        d['Count of nyt-metadata-cleaned-3.csv'] = +d['Count of nyt-metadata-cleaned-3.csv'];
+        d['Count'] = +d['Count'];
         d['Year'] = +d['Year'];
     });
 
@@ -38,7 +38,7 @@ d3.csv("data/treemap2000-11.csv").then(data => {
         const filteredData = data.filter(d => d.Year === selectedYear);
 
         // Get max article count for color scaling
-        const maxCount = d3.max(filteredData, d => d['Count of nyt-metadata-cleaned-3.csv']) || 1;
+        const maxCount = d3.max(filteredData, d => d['Count']) || 1;
 
         // Define a color scale using a gradient (e.g., shades of blue)
         const colorScale = d3.scaleSequential()
@@ -48,7 +48,7 @@ d3.csv("data/treemap2000-11.csv").then(data => {
         // Group data by section name and calculate total article count
         const sectionCounts = filteredData.map(d => ({
             name: d['Section Name'],
-            value: d['Count of nyt-metadata-cleaned-3.csv']
+            value: d['Count']
         }));
 
         // Set up hierarchy and treemap layout
