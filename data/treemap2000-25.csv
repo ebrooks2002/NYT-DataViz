@@ -1,0 +1,339 @@
+Section Name,Count,Year
+Arts,5301,2000
+Books,2631,2000
+Business Day,14781,2000
+Food,1023,2000
+Health,540,2000
+New York,18768,2000
+Opinion,8079,2000
+Science,864,2000
+Sports,8814,2000
+Technology,3064,2000
+Travel,1303,2000
+U.S.,7402,2000
+World,5316,2000
+Arts,5554,2001
+Books,2775,2001
+Business Day,15575,2001
+Food,1193,2001
+Health,756,2001
+New York,19935,2001
+Opinion,8763,2001
+Science,934,2001
+Sports,8785,2001
+Technology,2452,2001
+Travel,1746,2001
+U.S.,8266,2001
+World,8005,2001
+Arts,5308,2002
+Books,2816,2002
+Business Day,15860,2002
+Food,1274,2002
+Health,672,2002
+New York,19340,2002
+Opinion,8565,2002
+Science,933,2002
+Sports,9235,2002
+Technology,1440,2002
+Travel,1859,2002
+U.S.,8264,2002
+World,9061,2002
+Arts,5190,2003
+Books,2793,2003
+Business Day,15411,2003
+Food,1182,2003
+Health,592,2003
+New York,19306,2003
+Opinion,8876,2003
+Science,923,2003
+Sports,8702,2003
+Technology,1275,2003
+Travel,1874,2003
+U.S.,7609,2003
+World,10906,2003
+Arts,6149,2004
+Books,2670,2004
+Business Day,14145,2004
+Food,734,2004
+Health,871,2004
+New York,18202,2004
+Opinion,11356,2004
+Science,647,2004
+Sports,7775,2004
+Technology,1144,2004
+Travel,2085,2004
+U.S.,9262,2004
+World,8642,2004
+Arts,9810,2005
+Books,2454,2005
+Business Day,15625,2005
+Food,464,2005
+Health,1533,2005
+New York,18080,2005
+Opinion,15095,2005
+Science,159,2005
+Sports,7721,2005
+Technology,1606,2005
+Travel,2551,2005
+U.S.,7984,2005
+World,13488,2005
+Arts,12562,2006
+Books,4303,2006
+Business Day,25913,2006
+Food,1624,2006
+Health,2031,2006
+New York,25838,2006
+Opinion,16492,2006
+Science,839,2006
+Sports,12778,2006
+Technology,1956,2006
+Travel,3232,2006
+U.S.,10742,2006
+World,13729,2006
+Arts,7756,2007
+Books,2520,2007
+Business Day,17693,2007
+Food,1285,2007
+Health,1092,2007
+New York,12701,2007
+Opinion,8083,2007
+Science,1115,2007
+Sports,9544,2007
+Technology,2415,2007
+Travel,2120,2007
+U.S.,7508,2007
+World,7281,2007
+Arts,9208,2008
+Books,2547,2008
+Business Day,20304,2008
+Food,2200,2008
+Health,1916,2008
+New York,12040,2008
+Opinion,8782,2008
+Science,1569,2008
+Sports,13141,2008
+Technology,3016,2008
+Travel,1897,2008
+U.S.,10036,2008
+World,6320,2008
+Arts,11612,2009
+Books,2304,2009
+Business Day,20456,2009
+Food,2430,2009
+Health,3302,2009
+New York,10671,2009
+Opinion,7905,2009
+Science,2397,2009
+Sports,12531,2009
+Technology,3678,2009
+Travel,2091,2009
+U.S.,8349,2009
+World,6604,2009
+Arts,10198,2010
+Books,2232,2010
+Business Day,19183,2010
+Food,1384,2010
+Health,2888,2010
+New York,9632,2010
+Opinion,8434,2010
+Science,2249,2010
+Sports,12105,2010
+Technology,2989,2010
+Travel,1949,2010
+U.S.,9131,2010
+World,7122,2010
+Arts,8613,2011
+Books,2057,2011
+Business Day,11905,2011
+Food,976,2011
+Health,2263,2011
+New York,8488,2011
+Opinion,9191,2011
+Science,2238,2011
+Sports,10848,2011
+Technology,2722,2011
+Travel,2106,2011
+U.S.,9840,2011
+World,8474,2011
+Arts,8018,2012
+Books,1928,2012
+Business Day,10986,2012
+Food,1070,2012
+Health,1702,2012
+New York,7538,2012
+Opinion,9859,2012
+Science,2191,2012
+Sports,11520,2012
+Technology,3270,2012
+Travel,1150,2012
+U.S.,10018,2012
+World,9633,2012
+Arts,8065,2013
+Books,1979,2013
+Business Day,10087,2013
+Food,981,2013
+Health,1586,2013
+New York,7316,2013
+Opinion,9412,2013
+Science,1295,2013
+Sports,8177,2013
+Technology,2739,2013
+Travel,1130,2013
+U.S.,6734,2013
+World,8903,2013
+Arts,7985,2014
+Books,1922,2014
+Business Day,9853,2014
+Food,875,2014
+Health,1522,2014
+New York,6596,2014
+Opinion,8448,2014
+Science,1108,2014
+Sports,6430,2014
+Technology,2317,2014
+Travel,1130,2014
+U.S.,7698,2014
+World,9451,2014
+Arts,8017,2015
+Books,2001,2015
+Business Day,6623,2015
+Food,916,2015
+Health,1110,2015
+New York,5814,2015
+Opinion,7567,2015
+Science,1067,2015
+Sports,5885,2015
+Technology,1788,2015
+Travel,1199,2015
+U.S.,9372,2015
+World,9133,2015
+Arts,6191,2016
+Books,2007,2016
+Business Day,5051,2016
+Food,1303,2016
+Health,1059,2016
+New York,4557,2016
+Opinion,7278,2016
+Science,1005,2016
+Sports,4934,2016
+Technology,1473,2016
+Travel,894,2016
+U.S.,8347,2016
+World,7280,2016
+Arts,5180,2017
+Books,1986,2017
+Business Day,4336,2017
+Food,1255,2017
+Health,422,2017
+New York,3459,2017
+Opinion,6645,2017
+Science,720,2017
+Sports,3638,2017
+Technology,1221,2017
+Travel,871,2017
+U.S.,6978,2017
+World,6284,2017
+Arts,4650,2018
+Books,2041,2018
+Business Day,3577,2018
+Food,1253,2018
+Health,443,2018
+New York,3019,2018
+Opinion,7646,2018
+Science,665,2018
+Sports,3203,2018
+Technology,1109,2018
+Travel,787,2018
+U.S.,7196,2018
+World,5576,2018
+Arts,4388,2019
+Books,1912,2019
+Business Day,3159,2019
+Food,1261,2019
+Health,552,2019
+New York,2195,2019
+Opinion,5964,2019
+Science,685,2019
+Sports,2921,2019
+Technology,757,2019
+Travel,636,2019
+U.S.,8173,2019
+World,5500,2019
+Arts,3812,2020
+Books,2020,2020
+Business Day,3702,2020
+Food,1251,2020
+Health,913,2020
+New York,2249,2020
+Opinion,5266,2020
+Science,688,2020
+Sports,2550,2020
+Technology,1059,2020
+Travel,374,2020
+U.S.,12275,2020
+World,5051,2020
+Arts,3466,2021
+Books,1986,2021
+Business Day,3828,2021
+Food,1213,2021
+Health,757,2021
+New York,2392,2021
+Opinion,3937,2021
+Science,694,2021
+Sports,3334,2021
+Technology,858,2021
+Travel,346,2021
+U.S.,11905,2021
+World,6015,2021
+Arts,3382,2022
+Books,1777,2022
+Business Day,3635,2022
+Food,1170,2022
+Health,526,2022
+New York,2173,2022
+Opinion,3732,2022
+Science,596,2022
+Sports,3014,2022
+Technology,804,2022
+Travel,332,2022
+U.S.,8830,2022
+World,6298,2022
+Arts,1685,2023
+Books,798,2023
+Business Day,1573,2023
+Food,457,2023
+Health,226,2023
+New York,1071,2023
+Opinion,1772,2023
+Science,276,2023
+Sports,917,2023
+Technology,307,2023
+Travel,173,2023
+U.S.,5110,2023
+World,2603,2023
+Arts,299,2024
+Books,109,2024
+Business Day,290,2024
+Food,94,2024
+Health,45,2024
+New York,267,2024
+Opinion,319,2024
+Science,41,2024
+Sports,15,2024
+Technology,58,2024
+Travel,37,2024
+U.S.,671,2024
+World,607,2024
+Arts,25,2025
+Books,8,2025
+Business Day,26,2025
+Food,7,2025
+Health,6,2025
+New York,20,2025
+Opinion,27,2025
+Science,3,2025
+Sports,1,2025
+Technology,4,2025
+Travel,6,2025
+U.S.,99,2025
+World,46,2025
