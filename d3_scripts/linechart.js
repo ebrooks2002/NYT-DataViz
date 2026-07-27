@@ -1,5 +1,7 @@
  // Define margins and dimensions
- const margin = { top: 50, right: 100, bottom: 50, left: 60 };
+ // left is wide enough for the tick labels plus the rotated axis label, so that
+ // label doesn't crowd the panel's own left border.
+ const margin = { top: 40, right: 100, bottom: 50, left: 70 };
  const lineChartContainer = document.getElementById('linechart');
  const lcWidth = lineChartContainer.clientWidth - margin.left - margin.right;
  const lcHeight = (lineChartContainer.clientHeight || 600) - margin.top - margin.bottom; // Default height if not set
@@ -15,11 +17,8 @@
  const x = d3.scaleLinear().range([0, lcWidth]);
  const y = d3.scaleLinear().range([lcHeight, 0]);
 
- const colorMap = {
-     "Positive": "#03C03C",
-     "Neutral": "grey",
-     "Negative": "#FF333D"
- };
+ // Shared diverging sentiment scale — see d3_scripts/palette.js
+ const colorMap = NYT.sentiment;
 
  const line = d3.line()
      .x(d => x(d.year))
@@ -43,8 +42,9 @@
          d => d.Sentiment
      );
 
-     // Prepare data for plotting
-     const sentiments = ["Positive", "Neutral", "Negative"];
+     // Prepare data for plotting — fixed order, so a series keeps its color
+     // no matter which section is selected
+     const sentiments = NYT.sentimentOrder;
      const sections = Array.from(nestedData.keys()).sort();
 
      const plotData = {};
@@ -130,7 +130,7 @@
              .attr("d", d => line(d.values))
              .style("stroke", d => colorMap[d.sentiment])
              .style("fill", "none")
-             .style("stroke-width", 2.5);
+             .style("stroke-width", NYT.marks.strokeWidth);
 
          // Add legend
          const legend = lcSvg.selectAll(".legend")
@@ -138,7 +138,8 @@
              .enter()
              .append("g")
              .attr("class", "legend")
-             .attr("transform", (d, i) => `translate(${lcWidth - 90}, ${i * 25})`);
+             // Sits in the right margin, not over the plot area.
+             .attr("transform", (d, i) => `translate(${lcWidth + 12}, ${i * 24})`);
 
          legend.append("rect")
              .attr("x", 0)

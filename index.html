@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Investigating Trends in NYT Articles</title>
-    <!-- Include Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Libre Franklin: the open-source revival of Franklin Gothic, the family NYT's
+         own Franklin is drawn from. Source Serif 4 stands in for NYT Imperial. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
     <!-- fullPage.js CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.css">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,14 +21,15 @@
         <!-- Intro Section -->
         <div class="section" id="intro">
             <div id="intro-content">
+                <p class="kicker">A Data Visualization Project</p>
                 <h1>Investigating Trends in The New York Times Through Visualization</h1>
-                <h2>By Ethan Brooks and Tamur Asar</h2>
-                <p>The following visualizations were constructed using a collection
-                    of over <a href="https://www.kaggle.com/datasets/aryansingh0909/nyt-articles-21m-2000-present"
-                        target="_blank">two million New York Times articles</a>. They aim to illustrate common patterns,
-                    be they cultural or semantic, that exist in NYT articles. While we do not have comprehensive datasets
-                    for other news agencies to compare to, we aim to extrapolate our findings as an explanation to broader
-                    news trends.
+                <p class="byline">By Ethan Brooks and Tamur Asar</p>
+                <p class="standfirst">
+                    Four views into a collection of over <a
+                        href="https://www.kaggle.com/datasets/aryansingh0909/nyt-articles-21m-2000-present"
+                        target="_blank" rel="noopener">two million New York Times articles</a>, tracing the cultural and
+                    semantic patterns that run through them — and what those patterns suggest about the wider news
+                    landscape.
                 </p>
             </div>
         </div>
@@ -33,56 +37,57 @@
         <!-- D3.js Treemap Section -->
         <div class="section">
             <div class="content-container">
-                <h2>Which New York Times sections produce the most news?</h2>
-                <!-- Year Selector -->
-                <div class="year-selector">
-                    <label for="year">Select Year:</label>
-                    <select id="year"></select>
-                </div>
-                <div class="treemapwrapper">
+                <header class="viz-header">
+                    <p class="kicker">Section Production</p>
+                    <h2>Which New York Times sections produce the most news?</h2>
+                </header>
+                <div class="viz-layout">
+                    <div class="viz-controls">
+                        <label for="year">Year</label>
+                        <select id="year"></select>
+                    </div>
                     <!-- Treemap Container -->
                     <div id="treemap"></div>
-                    <div id="tooltip" class="tooltip" style="opacity: 0;"></div>
-                    <p>
-                        This visualization, called a Treemap, shows the breakdown
-                        of published articles by section for a given year. Treemaps
-                        are effective at conveying how individual sections contribute to the total volume of published articles. By
-                        interacting with the year selector, users can explore trends over time. For example, they might discover
-                        growth in technology-related articles with the rise of the internet and digital culture. They might also
-                        discover the New York section was common during the post-9/11 period, that the Business Day section rose
-                        during the 2007 financial crisis, and that the World section rose during the 2003 Iraq War. Viewers may also
-                        notice that some sections hold a relatively constant percentage makeup of total articles published, while
-                        others fluctuate greatly year to year.
-                    </p>
+                    <aside class="viz-note">
+                        <p>
+                            Each tile is one section, sized by its share of everything published that year and shaded
+                            by article count.
+                        </p>
+                        <p>
+                            Stepping through the years shows a newsroom reacting: New York swells after 9/11, Business
+                            Day during the 2007 financial crisis, World through the 2003 Iraq War. Some sections hold a
+                            steady share; others move sharply year to year.
+                        </p>
+                    </aside>
                 </div>
+                <div id="tooltip" class="tooltip" style="opacity: 0;"></div>
             </div>
         </div>
 
         <!-- D3.js Word Cloud Section -->
         <div class="section">
             <div class="content-container">
-                <h2>What were the most common words of each year?</h2>
-                <!-- Year Selector -->
-                <div class="year-selector">
-                    <label for="wordcloud-year">Select Year:</label>
-                    <select id="wordcloud-year"></select>
-                </div>
-                <!-- Word Cloud Container -->
-                <div class="wordcloudwrapper">
+                <header class="viz-header">
+                    <p class="kicker">Common Words</p>
+                    <h2>What were the most common words of each year?</h2>
+                </header>
+                <div class="viz-layout">
+                    <div class="viz-controls">
+                        <label for="wordcloud-year">Year</label>
+                        <select id="wordcloud-year"></select>
+                    </div>
+                    <!-- Word Cloud Container -->
                     <div id="wordcloud"></div>
-                    <p>
-                        "Hot topic" words can give us insights into the current events
-                        of a given year. This word cloud shows for each year the top ten keywords that saw the largest percentage
-                        increase in frequency of use from the previous year. We decided on a word cloud because it allows users to
-                        visualize the growth of top keywords and compare them relative to others. The size of each word indicates the
-                        magnitude of growth, making it easy to identify which topics have gained the most traction. As one might
-                        expect, in 2001, the keywords 'New York City' and 'Terrorism' grew significantly from the previous year,
-                        reflecting the impact of the September 11th attacks on public consciousness and media coverage. In 2003, we
-                        see the prominence of keywords like 'Iraq', 'United States International Relations', and 'Housing',
-                        coinciding with the Iraq War and the focus on real estate that foreshadowed the coming housing market crisis.
-                        In 2008, 'Barack Obama' and 'United States Economy' surge in frequency, corresponding to Obama's election
-                        campaign and the global financial crisis.
-                    </p>
+                    <aside class="viz-note">
+                        <p>
+                            The ten keywords that grew fastest against the previous year. Larger, darker words grew
+                            more.
+                        </p>
+                        <p>
+                            The results track the news cycle closely: “New York City” and “Terrorism” in 2001, “Iraq”
+                            and “Housing” in 2003, “Barack Obama” and “United States Economy” in 2008.
+                        </p>
+                    </aside>
                 </div>
             </div>
         </div>
@@ -90,24 +95,27 @@
         <!-- D3.js Line Chart Sentiment Trends Section -->
         <div class="section">
             <div class="content-container">
-                <h2>Current events shape our news landscape - How do topical news events shift the tone of articles across
-                    different sectors of news?</h2>
-                <!-- Section Selector -->
-                <div class="selector-container">
-                    <label for="sectionSelect">Select Section:</label>
-                    <select id="sectionSelect"></select>
-                </div>
-                <!-- Line Chart Container -->
-            <div class="linechartwrapper">
-                <div id="linechart"></div>
-                    <p>
-                        This line chart illustrates the
-                        average sentiment across various sections over time. We utilized sentiment analysis to gauge the emotional
-                        tone of the articles in each section, presenting a clear picture of how the tone of news changes.
-                        This visualization shows how different sections of news might respond to the same event. For example, the
-                        September 11 attacks in 2001 and the financial crisis of 2008 led to significant shifts in sentiment across all
-                        sections, highlighting how major events have a widespread impact on reporting.
-                    </p>
+                <header class="viz-header">
+                    <p class="kicker">Sentiment Trends</p>
+                    <h2>How do news events shift the tone of coverage across sections?</h2>
+                </header>
+                <div class="viz-layout">
+                    <div class="viz-controls">
+                        <label for="sectionSelect">Section</label>
+                        <select id="sectionSelect"></select>
+                    </div>
+                    <!-- Line Chart Container -->
+                    <div id="linechart"></div>
+                    <aside class="viz-note">
+                        <p>
+                            Sentiment analysis scored the tone of every article; the lines track what share of a
+                            section's coverage read positive, neutral, or negative.
+                        </p>
+                        <p>
+                            Major events move every section at once — 2001 and 2008 both register sharp shifts — but
+                            sections differ in how far they swing.
+                        </p>
+                    </aside>
                 </div>
             </div>
         </div>
@@ -115,30 +123,28 @@
         <!-- D3.js Stacked Bar Chart Section -->
         <div class="section">
             <div class="content-container">
-                <h2>
-                    Which categories lean towards being the most negative? The most positive?
-                </h2>
-                <!-- Year Selector -->
-                <div class="year-selector">
-                    <label for="yearSelect">Select Year:</label>
-                    <select id="yearSelect"></select>
-                </div>
-                <!-- Stacked Bar Chart Container -->
-                <div class = "stackedbarchartwrapper">
+                <header class="viz-header">
+                    <p class="kicker">Sentiment by Section</p>
+                    <h2>Which sections lean most negative? Which lean most positive?</h2>
+                </header>
+                <div class="viz-layout">
+                    <div class="viz-controls">
+                        <label for="yearSelect">Year</label>
+                        <select id="yearSelect"></select>
+                    </div>
+                    <!-- Stacked Bar Chart Container -->
                     <div id="stackedbarchart"></div>
-                    <p> 
-                        Here, we find the breakdown of tone for different sections, allowing for a straightforward comparative
-                        analysis. Immediately you can recognize a trend in some of the bars. Perhaps most insightful is the category
-                        for "World". Between 2000 and 2010, the category for World never has an overall negative sentiment quantifier
-                        under fifty percent. That means, year over year, over fifty percent of world news articles published by The New
-                        York Times focus on negative subjects. We can contrast this to a category such as "Travel" where the category
-                        is overwhelmingly positive. This makes sense: travel news typically emphasizes the beauty of the world. In
-                        contrast, the most commonly talked about world news subjects are international conflicts. At the time of
-                        writing, opening The New York Times's World News page greets us with the Israel-Palestine conflict and the
-                        Russia-Ukraine War. There are no positive world articles. Is that to say there is no positive world news? Or
-                        that The New York Times provides what consumers seek, and people are looking for news about conflicts rather
-                        than their resolutions?
-                    </p>
+                    <aside class="viz-note">
+                        <p>
+                            Tone broken down within each section for a single year.
+                        </p>
+                        <p>
+                            Between 2000 and 2010, World never falls below 50% negative — year after year, most world
+                            coverage concerns conflict. Travel runs the opposite way, emphasizing the beauty of the
+                            world. Whether that gap reflects the world itself or what readers seek is the open
+                            question.
+                        </p>
+                    </aside>
                 </div>
             </div>
         </div>
@@ -146,16 +152,21 @@
         <!-- Conclusion Section -->
         <div class="section">
             <div class="content-container">
-                <h2>Conclusion</h2>
-                <p class="conclusion-paragraph">
-                    Our visualizations have provided valuable
-                    insights into the publishing trends, keyword growth, and sentiment dynamics of New York Times articles over
-                    the years. By exploring the data through these visualizations, we can better understand how The New York
-                    Times has responded to historical events, how public interests have shifted, and how the tone of news
-                    reporting has evolved. We hope these visualizations inspire further exploration and analysis of media
-                    trends. We would like to thank our professor, Bret Jackson, for teaching us the visualization tools and techniques
-                    needed for this project.
-                </p>
+                <header class="viz-header">
+                    <p class="kicker">Conclusion</p>
+                    <h2>Conclusion</h2>
+                </header>
+                <div class="prose">
+                    <p>
+                        Read together, these four views show a newsroom that moves with its moment — publishing volume
+                        shifting between sections, keywords spiking with the news cycle, and tone bending around the
+                        events of the year.
+                    </p>
+                    <p>
+                        We hope they prompt further exploration of media trends. Our thanks to our professor, Bret
+                        Jackson, for teaching us the visualization tools and techniques this project required.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -180,9 +191,14 @@
             scrollingSpeed: 700,
             css3: true,
             easing: 'easeInOutCubic',
-            
+            // Content flows from the top of each panel instead of being
+            // vertically centred, so every section title sits at the same height.
+            verticalCentered: false,
         });
     </script>
+
+    <!-- Shared palette — must load before any chart script -->
+    <script src="d3_scripts/palette.js"></script>
 
     <!-- D3.js Treemap Script -->
     <script src="d3_scripts/treemap.js"></script>
@@ -195,6 +211,6 @@
 
     <!-- D3.js Stacked Bar Chart Script -->
     <script src="d3_scripts/stackedbarchart.js"></script>
-    
+
 </body>
 </html>

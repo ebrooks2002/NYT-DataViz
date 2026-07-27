@@ -37,13 +37,14 @@ d3.csv("data/treemap2000-25.csv").then(data => {
 
         const filteredData = data.filter(d => d.Year === selectedYear);
 
-        // Get max article count for color scaling
-        const maxCount = d3.max(filteredData, d => d['Count']) || 1;
-
-        // Define a color scale using a gradient (e.g., shades of blue)
-        const colorScale = d3.scaleSequential()
-            .domain([0, maxCount])
-            .interpolator(d3.interpolateBlues);
+        // Shade tiles along a one-hue blue ramp by article count. Section counts are
+        // heavily skewed (the top section can hold ~24% of a year while the tail
+        // sections hold a few hundred articles each), so a linear scale would drop
+        // almost every tile into the lightest step. A quantile scale splits the 13
+        // sections evenly across the 5 steps instead, keeping the ramp readable.
+        const colorScale = d3.scaleQuantile()
+            .domain(filteredData.map(d => d['Count']))
+            .range(NYT.treemapRamp);
 
         // Group data by section name and calculate total article count
         const sectionCounts = filteredData.map(d => ({
@@ -101,6 +102,9 @@ d3.csv("data/treemap2000-25.csv").then(data => {
             .attr("y", d => (d.y1 - d.y0) / 2)
             .text(d => `${d.data.name}`) // Removed the count from the label
             .call(wrapText, d => d.x1 - d.x0)
+            // Label ink follows its own tile: the ramp crosses over mid-scale, so
+            // light tiles need dark text and dark tiles need light text.
+            .style("fill", d => NYT.labelOn(colorScale(d.value)))
             .style("display", d => {
                 const boxWidth = d.x1 - d.x0;
                 const boxHeight = d.y1 - d.y0;
@@ -124,6 +128,7 @@ d3.csv("data/treemap2000-25.csv").then(data => {
             .attr("y", d => (d.y1 - d.y0) / 2)
             .text(d => `${d.data.name}`) // Removed the count from the label
             .call(wrapText, d => d.x1 - d.x0)
+            .style("fill", d => NYT.labelOn(colorScale(d.value)))
             .style("display", d => {
                 const boxWidth = d.x1 - d.x0;
                 const boxHeight = d.y1 - d.y0;
